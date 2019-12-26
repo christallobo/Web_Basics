@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <script src="login2.js"></script>
+    <style>
+        #container {
+            background-color: aqua;
+            width: 550px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .font {
+            font-family: 'Trebuchet MS';
+            font-size: 18px;
+            font-weight: bold;
+            color: blue
+        }
+        .error {
+            color: red;
+            font-family: 'Trebuchet MS';
+        }
+        [type]{
+            border: red 1px solid;
+        }
+        [type="button"]{
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+        }
+        .big{
+            font-size: 35px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <form id="frm" action="positivenegative.html" method="get">
+            <table>
+                <tr>
+                    <th colspan="3" class="font big" >login Form</th>
+                </tr>
+                <tr>
+                    <td><label class="font">Enter username:</label></td>
+                    <td><input type="text" placeholder="enter username" id="username"></td>
+                    <td id="user-error" class="error"></td>
+                </tr>
+                <tr>
+                    <td><label class="font">Enter password:</label></td>
+                    <td><input type="password" placeholder="enter password" id="password"></td>
+                    <td id="pass-error" class="error"></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center"><input type="button" value="Login" onclick="validate()"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

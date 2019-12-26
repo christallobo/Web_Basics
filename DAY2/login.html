@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login form</title>
+    <script src="login.js"></script>
+    <style>
+        #container{
+            background-color: aqua;
+            width: 450px;
+            height: 200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .font{
+            font-family: 'Trebuchet MS';
+            font-size: 18px;
+            font-weight: bold;
+            color:blue
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <form  id="frm" action="positivenegative.html" method="get">
+            <label class="font">Enter username:</label>
+            <input type="text" placeholder="enter username" id="username"><br>
+            <label class="font">Enter password:</label>
+            <input type="password" placeholder="enter password" id="password"><br>
+            <input type="button" value="Login" onclick="validate()">
+        </form>
+    </div>
+</body>
+</html>

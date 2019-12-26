@@ -1,0 +1,42 @@
+table, th, td {
+    border: 3px solid grey;
+    border-collapse: collapse;
+  }
+  table{
+    box-shadow:3px 3px grey;
+  }
+  .heading{
+      background-color: yellow;
+  }
+  .week{
+      background-color: violet;
+  }
+  .sat{
+      background-color: aqua;
+  }
+  .sun{
+      background-color: rgb(107, 214, 107);
+  }
+  .holiday{
+      background-color: yellow;
+  }
+  .tablediv{
+      border: 10px black;
+      border-style:double;
+      width: 240px;
+      padding: 10px;
+      margin-left: auto;
+      margin-right: auto;
+      height: 190px;
+      margin-bottom: 5px;
+  }
+  .framediv{
+      width: 100%;
+      height: 100%;
+     margin-top: 5px;
+  }
+  .framediv iframe {
+     margin-left: 525px;
+     margin-right: auto;
+     background-color: cornsilk;
+  }

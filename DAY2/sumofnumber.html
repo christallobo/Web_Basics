@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sum of a Number</title>
+    <style>
+        div{
+            width: 400px; 
+            height: 350px; 
+            background-color: aqua;
+            margin-top: 30px;
+            font-style: italic;
+            font-size: 25px;
+            font-family: fantasy;
+        }
+    </style>
+    <script>
+        function sumofnumber(){
+            var number=document.getElementById("textNumber").value;
+            var temp=number;
+            var rem,sum=0;
+            while(number>0){
+                rem=number%10;
+                sum=sum+rem;
+                number=Math.trunc(number/10);
+            }
+            resultstr="the sum of integer" +sum;
+            document.getElementById("result").innerHTML= resultstr;
+        }
+    </script>
+</head>
+<body>
+    <h2>Sum of a number</h2>
+    <form  method="post">
+        <label>Enter the number</label>
+        <input type="text" id="textNumber" placeholder="Enter number" >
+        <input type="button" value="Check number" onclick="sumofnumber()">
+    </form>
+    <div id="result">
+        
+    </div>
+</body>
+</html>

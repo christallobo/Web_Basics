@@ -1,0 +1,13 @@
+<BR><br>
+<input type="button" value="toggle" (click)="toggle()">
+<hr>
+<p *ngIf="flag; else else_block">Founded as L&T Information Technology Ltd in December 1996, LTI is a wholly owned subsidiary of 
+    Larsen & Toubro Ltd (L&T). During 2001–2002 the company's name was changed from L&T Information 
+    Technology Limited to Larsen & Toubro Infotech Limited and in the same year the company achieved 
+    the assessed level of SEI Level 5. L&T Infotech dropped the word ‘Infotech’ from its name to 
+    reflect the changed business environment and rebranded itself as 'LTI' with a tag line of 'Let's Solve' 
+    in May 2017.</p><br>
+
+<ng-template #else_block>
+    <p>some alternate content</p>
+</ng-template>

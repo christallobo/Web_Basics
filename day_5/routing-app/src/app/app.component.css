@@ -1,0 +1,14 @@
+.header{
+    display: inline;
+
+}
+.header a{
+    background-color: lightcyan;
+    color: black;
+    padding:15px 15px 15px 15px;
+    text-decoration: none;
+    margin-right: 2px;
+}
+.title{
+    color: white;
+}

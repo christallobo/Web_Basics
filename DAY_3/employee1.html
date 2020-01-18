@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/style.css">
+    <script src="form.js"></script>
+    <title>Employee form</title>
+</head>
+
+<body>
+    <div id="error">
+
+    </div>
+    <form action="success.html" method="POST" id="form" validate autocomplete="off">
+        <table border="1">
+            <tr>
+                <td><label>*Name</label></td>
+                <td><input type="text"  name="empname" id="empname" pattern="[A-Za-z]{4,8}" required></td>
+            </tr>
+            <tr>
+                <td><label>*Employee Code</label></td>
+                <td><input type="text" name="empcode" id="empcode" pattern="[0-9]{8}" required></td>
+               
+            </tr>
+            <tr>
+                <td><label>Department</label></td>
+                <td><input type="radio" name="department" value="admin"><label>Admin</label><br>
+                    <input type="radio" name="department" value="hr"><label>HR</label><br>
+                    <input type="radio" name="department" value="technical"><label>Technical</label><br>
+                    <input type="radio" name="department" value="accounts"><label>Accounts</label>
+            </tr>
+            <tr>
+                <td><label>date of joining</label></td>
+                <td><input type="date" min="2010-01-01" max="2019-12-31"></td>
+            </tr>
+            <tr>
+                <td><label>Address</label>Address</td>
+                <td><textarea col="20" rows="4" placeholder="enter the address" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label>Training Program attended</label></td>
+                <td><input type="checkbox" name="training"><label>HTML/DHTML</label><br>
+                    <input type="checkbox" name="training"><label>Java</label><br>
+                    <input type="checkbox" name="training"><label>Client/Server</label><br>
+                    <input type="checkbox" name="training"><label>.NET</label></td>
+            </tr>
+            <tr>
+                <td><label>Training program need to attend</label></td>
+                <td>
+                    <select>
+                        <option>JavaScript</option>
+                        <option>Angular</option>
+                        <option>CSS</option>
+                        <option>HTML</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label>Send the information at Email</label></td>
+                <td><input type="url" id="txtURL" name="txtURL"
+                    maxlength="40" placeholder="Company Website Name" /></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="submit" value="Submit" onclick="validateForm()"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
